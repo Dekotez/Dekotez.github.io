@@ -2,10 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Своя игра</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -14,7 +13,7 @@
         </header>
 
         <main id="game-board">
-            <!-- Категории и вопросы -->
+            <!-- Категория 1: Литература -->
             <div class="category">
                 <h2>Математика</h2>
                 <div class="question" data-value="100">100</div>
@@ -24,6 +23,7 @@
                 <div class="question" data-value="500">500</div>
             </div>
 
+            <!-- Категория 2: История -->
             <div class="category">
                 <h2>История</h2>
                 <div class="question" data-value="100">100</div>
@@ -33,6 +33,7 @@
                 <div class="question" data-value="500">500</div>
             </div>
 
+            <!-- Категория 3: Наука -->
             <div class="category">
                 <h2>Физика</h2>
                 <div class="question" data-value="100">100</div>
@@ -42,26 +43,23 @@
                 <div class="question" data-value="500">500</div>
             </div>
 
-            <div class="category">
-                <h2>Спорт</h2>
-                <div class="question" data-value="100">100</div>
-                <div class="question" data-value="200">200</div>
-                <div class="question" data-value="300">300</div>
-                <div class="question" data-value="400">400</div>
-                <div class="question" data-value="500">500</div>
+            <!-- Кот в мешке 1 -->
+            <div class="category special">
+                <h2>Кот в мешке</h2>
+                <div class="question special" data-value="250">Вопрос 1</div>
+                <div class="question special" data-value="250">Вопрос 2</div>
             </div>
 
-            <div class="category">
-                <h2>Музыка</h2>
-                <div class="question" data-value="100">100</div>
-                <div class="question" data-value="200">200</div>
-                <div class="question" data-value="300">300</div>
-                <div class="question" data-value="400">400</div>
-                <div class="question" data-value="500">500</div>
+        <!-- Модальное окно с вопросом -->
+        <div id="question-modal" class="hidden">
+            <div class="modal-content">
+                <p id="question-text"></p>
+                <input type="text" id="answer-input" placeholder="Ваш ответ...">
+                <button onclick="checkAnswer()">Проверить</button>
+                <button onclick="closeModal()">Закрыть</button>
             </div>
-        </main>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
