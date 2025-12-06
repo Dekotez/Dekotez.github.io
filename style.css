@@ -6,9 +6,9 @@
 }
 
 .container {
-    max-width: 200px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 5px; /* Отступы по краям на мобильных */
+    padding: 10px; /* Отступы по краям на мобильных */
 }
 
 #game-board {
@@ -103,6 +103,7 @@ h1 {
     pointer-events: none;
     transform: scale(0.95);
 }
+
 
 
 
