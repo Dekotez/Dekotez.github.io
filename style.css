@@ -48,7 +48,7 @@ h1 {
 }
 
 .question {
-    height: 80px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,3 +73,4 @@ h1 {
     pointer-events: none;
     transform: scale(0.95);
 }
+
