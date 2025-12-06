@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 200px;
     margin: 0 auto;
     padding: 10px; /* Отступы по краям на мобильных */
 }
@@ -18,7 +18,7 @@
 }
 
 .category {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -103,5 +103,6 @@ h1 {
     pointer-events: none;
     transform: scale(0.95);
 }
+
 
 
